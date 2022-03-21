@@ -20,5 +20,5 @@ def LongestSubstrDistinctChars(s):
 	return len(l)
 s="chandrapal"
 result=LongestSubstrDistinctChars(s)
-
+print(result)
 
