@@ -1,0 +1,24 @@
+def LongestSubstrDistinctChars(s):
+	result_length=0
+	n=len(s)
+	l=[]
+	for i in range(n):
+		if s[i] not in l:
+			l.append(s[i])
+		for j in range(i+1,n):
+			if s[j] not in l:
+				l.append(s[j])
+			else:
+				del l
+				break
+				#if result_length<len(l):
+				#	result_length=len(l)
+			#else:
+			#	result_length=len(l)
+			#	del l
+			#	break
+	return len(l)
+s="chandrapal"
+result=LongestSubstrDistinctChars(s)
+print(result)
+
